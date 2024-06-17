@@ -1,0 +1,65 @@
+/* Importing a more attractive font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FFCBCB;
+}
+
+.header_text {
+    font-family: "Playwrite IS", cursive;
+    font-size: 50px;
+    font-weight: bold;
+    color: #FF6384;
+    /* Derived from primary color */
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.gif_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cat-dialogue {
+    position: absolute;
+    font-family: 'Pacifico', cursive;
+    font-size: 16px;
+    color: #FF6384;
+    /* Derived from primary color */
+    padding: 10px;
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeInOut 5s infinite;
+}
+
+.cat-dialogue.large {
+    font-size: 20px;
+    color: #FF3B59;
+    /* Slightly darker shade */
+    font-weight: bold;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

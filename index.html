@@ -1,0 +1,56 @@
+
+    <head>
+        <link rel="stylesheet" href="./styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head> 
+    <body>
+        <div class="container">
+            <div>
+                <h1 class="header_text">Do you wanna go out with me and fall in love ?</h1>
+                <h1 class="header_text">Veruvooo kude...perunnal oke ayalle</h1>
+            </div>
+            <div class="gif_container">
+                <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDdtZ2JiZDR0a3lvMWF4OG8yc3p6Ymdvd3g2d245amdveDhyYmx6eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cLS1cfxvGOPVpf9g3y/giphy.gif" alt="Cute animated illustration">
+            </div>
+            <div class="buttons">
+                <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "yes.html";
+                    }
+                    
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+
+                    function addCatDialogues() {
+                        const dialogues = [
+                            "Meow!", "Rubyyyy...", "Got milk?", "Feeling Hugry as alwys🫠 ?. Lets get some bleh bleh cake.",
+                            "I gotta see that Catnap 😌, Fathy!", "Iy oru mwonjathy alehh", "Migraine, Deshym and no cooking accepted",
+                            "Paws and mewos madam!"
+                        ];
+                        for (let i = 0; i < 8; i++) {
+                            const div = document.createElement('div');
+                            div.className = 'cat-dialogue';
+                            const text = dialogues[Math.floor(Math.random() * dialogues.length)];
+                            div.textContent = text;
+                            if (text === "Fur real?") {
+                                div.classList.add('large');
+                            }
+                            div.style.top = `${Math.random() * 100}vh`;
+                            div.style.left = `${Math.random() * 100}vw`;
+                            document.body.appendChild(div);
+                        }
+                    }
+                    
+                    document.addEventListener('DOMContentLoaded', addCatDialogues);
+                </script> 
+            </div>
+        </div>
+    </body> 
+</html>
