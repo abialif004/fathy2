@@ -7,7 +7,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 90vh;
-    background-color: #FFCBCB;
+    background-color: rgb(189, 225, 122);
 }
 
 /* Existing styles remain unchanged */
@@ -28,7 +28,7 @@ body {
     font-family: "Playwrite IS", cursive;
     font-size: 40px;
     font-weight: bold;
-    color: #FF6384;
+    color: #FFF;
     /* Derived from primary color */
     text-align: center;
     margin-top: 20px;
@@ -45,9 +45,9 @@ body {
 }
 
 .btn {
-    background-color: #FFDEE3;
+    background-color: rgb(189, 225, 122);;
     /* Derived from primary color */
-    color: #FF6384;
+    color: #FFC2D4;
     /* Derived from primary color */
     padding: 15px 50px;
     text-align: center;
