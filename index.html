@@ -28,23 +28,23 @@
                         document.getElementById('noButton').style.top = `${y}px`;
                     }
 
-                    function addCatDialogues() {
-                        const dialogues = [
-                            "I love you", "Neeyan nte life ile ever best thingg", "Porunno nte kudee", 
-                            "Her eyes adil an avlde whole character irikne", "I love you kukkumaa",
-                        ];
-                        for (let i = 0; i < 8; i++) {
-                            const div = document.createElement('div');
-                            div.className = 'cat-dialogue';
-                            const text = dialogues[Math.floor(Math.random() * dialogues.length)];
-                            div.textContent = text;
-                            if (text === "Fur real?") {
-                                div.classList.add('large');
-                            }
-                            div.style.top = `${Math.random() * 100}vh`;
-                            div.style.left = `${Math.random() * 100}vw`;
-                            document.body.appendChild(div);
-                        }
+                    // function addCatDialogues() {
+                    //     const dialogues = [
+                    //         "I love you", "Neeyan nte life ile ever best thingg", "Porunno nte kudee", 
+                    //         "Her eyes adil an avlde whole character irikne", "I love you kukkumaa",
+                    //     ];
+                    //     for (let i = 0; i < 8; i++) {
+                    //         const div = document.createElement('div');
+                    //         div.className = 'cat-dialogue';
+                    //         const text = dialogues[Math.floor(Math.random() * dialogues.length)];
+                    //         div.textContent = text;
+                    //         if (text === "Fur real?") {
+                    //             div.classList.add('large');
+                    //         }
+                    //         div.style.top = `${Math.random() * 100}vh`;
+                    //         div.style.left = `${Math.random() * 100}vw`;
+                    //         document.body.appendChild(div);
+                    //     }
                     }
                     
                     document.addEventListener('DOMContentLoaded', addCatDialogues);
